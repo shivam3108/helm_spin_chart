@@ -1,0 +1,9 @@
+apache:
+    replicaCount: 2
+    image:
+      repository: acrregistory.azurecr.io/microservice-kubernetes-demo-apache
+      tag: latest
+    service:
+      name: apache
+      type: LoadBalancer
+      Port: 80
